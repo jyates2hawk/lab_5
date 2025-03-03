@@ -2,12 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Volunteer Form</title>
+  <title>Document</title>
 </head>
 <body>
   <h1>Volunteer Form</h1>
-  <form>
-    <input <input type="text" name="text_field">
-    <input type="submit" value="NOW"
+  <form action="" method="post">
+    <fieldset>
+      <legend>My Info</legend>
+      <div><label>First name:<input size="100" type="text" name="first_name_field"></label></div>
+      <div><label>Last name:<input size="100" type="text" name="last_name_field"></label></div>
+      <div><label>Phone:<input size="100" type="text" name="phone_field"></label></div>
+      <div><label>Email:<input size="100" type="text" name="email_field"></label></div>
+      <div>Gender:</div>
+      <div>
+        <label>Male:<input type="radio" name="gender_field" value="male"></label>
+        <label>Female:<input type="radio" name="gender_field" value="female"></label>
+      </div>
+      <div>Age:</div>
+      <select name="age_field">
+        <option>Under 18</option>
+        <option>Over 18</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>My Availability</legend>
+      <h3>Days Available:</h3>
+      <div>
+        <div><label>Sunday<input type="checkbox" name="available_field[]" value="sunday"></label></div>
+        <div><label>Monday<input type="checkbox" name="available_field[]" value="monday"></label></div>
+        <div><label>Tuesday<input type="checkbox" name="available_field[]" value="tuesday"></label></div>
+        <div><label>Wednesday<input type="checkbox" name="available_field[]" value="wednesday"></label></div>
+        <div><label>Thursday<input type="checkbox" name="available_field[]" value="thursday"></label></div>
+        <div><label>Friday<input type="checkbox" name="available_field[]" value="friday"></label></div>
+        <div><label>Saturday<input type="checkbox" name="available_field[]" value="saturday"></label></div>
+        <h3>Comments</h3>
+        <textarea name="comments_field"></textarea>
+      </div>
+    </fieldset>
+    <input type="hidden" name="hidden_field" value="jyates">
+    <input type="submit">
   </form>
 </body>
+</html>
